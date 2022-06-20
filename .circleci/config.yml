@@ -27,6 +27,12 @@ test:
     RAILS_ENV: test
   working_directory: ~/rails-docker-yki/src
   steps:
-    -
-    checkout:
-      path: ~/rails-docker-yki
+    - checkout:
+        path: ~/rails-docker-yki
+    - ruby/install-deps
+    - run:
+        name: Database setup
+        command: bundle exec rails db:migrate
+    - run:
+        name: test
+        command: bundle exec rake test
