@@ -1,0 +1,4 @@
+heroku config:add APP_DATABASE='heroku_77ba1b2b42a9b88' -a rails-docker-yki
+heroku config:add APP_DATABASE_USERNAME='b3e0ae41e3d8e5' -a rails-docker-yki
+heroku config:add APP_DATABASE_PASSWORD='869dc7c4' -a rails-docker-yki
+heroku config:add APP_DATABASE_HOST='us-cdbr-east-05.cleardb.net' -a rails-docker-yki
